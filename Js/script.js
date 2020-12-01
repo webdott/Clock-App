@@ -128,6 +128,7 @@ const getTime = () => {
             main.className ='main night';
         case hours < 12:
             timeOfDay = 'morning';
+            main.className= 'main morning';
             periodOfDay = 'AM';
             break;
         case (hours >= 12) && (hours < 18):
