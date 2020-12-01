@@ -136,6 +136,7 @@ main.main{
         color: $white;
         display: flex;
         justify-content: space-between;
+        padding-bottom: 1.2rem;
 
         @media screen and (max-width: 768px){
             flex-direction: column;
