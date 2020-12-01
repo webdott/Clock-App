@@ -56,7 +56,7 @@ const fillQuote = (data) => {
 //timezone Data
 const getTimeData = async() => {
     try {
-        const API_URL = `http://worldtimeapi.org/api/ip`;
+        const API_URL = `https://worldtimeapi.org/api/ip`;
         const response = await fetch(API_URL);
         const timeData = await response.json();
         timeStandard = timeData.abbreviation;
