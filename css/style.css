@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Heebo&display=swap");
+*,
+:before,
+:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Barlow', sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+main.main {
+  width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main.main.morning {
+  background: url("https://res.cloudinary.com/webdot/image/upload/v1606606622/jeremy-bishop-dvACrXUExLs-unsplash_yecxkk.jpg");
+  background-attachment: fixed;
+}
+
+main.main.morning .timezone-details {
+  background: rgba(128, 128, 128, 0.7);
+}
+
+main.main.evening {
+  background: url("https://res.cloudinary.com/webdot/image/upload/v1606606658/z-s-ODjh4MU7JrE-unsplash_q34uph.jpg");
+  background-attachment: fixed;
+  background-position: left;
+}
+
+main.main.evening .timezone-details {
+  background: rgba(0, 0, 0, 0.85);
+  color: #ffffff;
+}
+
+main.main.evening .timezone-details .right {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+main.main.night {
+  background: url("https://res.cloudinary.com/webdot/image/upload/v1606606697/ryan-hutton-Jztmx9yqjBw-unsplash_ov6pgr.jpg");
+  background-attachment: fixed;
+  background-position: right;
+  background-size: cover;
+}
+
+main.main.night .timezone-details {
+  background: rgba(0, 0, 0, 0.85);
+  color: #ffffff;
+}
+
+main.main.night .timezone-details .right {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+main.main .clock-section {
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem 4rem;
+}
+
+@media screen and (max-width: 800px) {
+  main.main .clock-section {
+    padding: 1.5rem 2rem;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  main.main .clock-section {
+    padding: 1.5rem 1rem;
+  }
+}
+
+main.main .clock-section .quotes-section {
+  max-width: 450px;
+  color: #ffffff;
+  width: 100%;
+  display: flex;
+}
+
+main.main .clock-section .quotes-section .quotes {
+  width: 85%;
+}
+
+main.main .clock-section .quotes-section q {
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all .6s ease-in-out;
+}
+
+main.main .clock-section .quotes-section p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: .6rem;
+  transition: all .6s ease-in-out;
+}
+
+main.main .clock-section .quotes-section i {
+  padding-top: .2rem;
+  margin-left: .7rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+main.main .time__expand__details {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  main.main .time__expand__details {
+    flex-direction: column;
+  }
+}
+
+main.main .time__expand__details .time {
+  text-transform: uppercase;
+}
+
+main.main .time__expand__details .time .greetings,
+main.main .time__expand__details .time .main-time,
+main.main .time__expand__details .time .location {
+  margin-bottom: .75rem;
+}
+
+main.main .time__expand__details .time .greetings, main.main .time__expand__details .time .location {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  main.main .time__expand__details .time .greetings, main.main .time__expand__details .time .location {
+    font-size: .95rem;
+  }
+}
+
+main.main .time__expand__details .time .main-time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 200px;
+  font-family: 'Heebo', sans-serif !important;
+}
+
+@media screen and (max-width: 470px) {
+  main.main .time__expand__details .time .main-time {
+    height: 150px;
+  }
+}
+
+main.main .time__expand__details .time .main-time div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: .5rem 0;
+  margin-left: 1.5rem;
+}
+
+main.main .time__expand__details .time .main-time h1 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 10rem;
+}
+
+@media screen and (max-width: 600px) {
+  main.main .time__expand__details .time .main-time h1 {
+    font-size: 9rem;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  main.main .time__expand__details .time .main-time h1 {
+    font-size: 7rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  main.main .time__expand__details .time .main-time h1 {
+    font-size: 6rem;
+  }
+}
+
+main.main .time__expand__details .time .main-time sup, main.main .time__expand__details .time .main-time sub {
+  font-family: 'Heebo', sans-serif;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  main.main .time__expand__details .time .main-time sup, main.main .time__expand__details .time .main-time sub {
+    font-size: .75rem;
+    font-weight: bold;
+  }
+}
+
+main.main .time__expand__details .time .main-time sup {
+  vertical-align: super;
+}
+
+main.main .time__expand__details .time .main-time sub {
+  vertical-align: sub;
+}
+
+main.main .time__expand__details a {
+  align-self: flex-end;
+  text-decoration: none;
+  color: #000000;
+}
+
+@media screen and (max-width: 768px) {
+  main.main .time__expand__details a {
+    align-self: flex-start;
+    margin-top: 1rem;
+  }
+}
+
+main.main .time__expand__details .expand__details {
+  background-color: #ffffff;
+  color: #000000;
+  text-transform: uppercase;
+  position: relative;
+  padding: .5rem .3rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2em;
+  cursor: pointer;
+  min-width: 110px;
+}
+
+main.main .time__expand__details .expand__details p {
+  width: 100%;
+  text-align: center;
+}
+
+main.main .time__expand__details .expand__details i {
+  margin-left: .8rem;
+  font-size: 1.7rem;
+}
+
+main.main .time__expand__details .expand__details .none {
+  display: none;
+}
+
+main.main .timezone-details {
+  display: flex;
+  align-items: center;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+  main.main .timezone-details {
+    flex-direction: column;
+  }
+}
+
+main.main .timezone-details.show {
+  max-height: fit-content;
+  padding: 1.5rem 4rem;
+}
+
+@media screen and (max-width: 800px) {
+  main.main .timezone-details.show {
+    padding: 1.5rem 2rem;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  main.main .timezone-details.show {
+    padding: 1.5rem 1rem;
+  }
+}
+
+main.main .timezone-details .left, main.main .timezone-details .right {
+  width: 50%;
+}
+
+@media screen and (max-width: 900px) {
+  main.main .timezone-details .left, main.main .timezone-details .right {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main.main .timezone-details .left, main.main .timezone-details .right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main.main .timezone-details .left {
+    margin-right: .8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main.main .timezone-details .left {
+    margin-right: 0;
+  }
+}
+
+main.main .timezone-details .right {
+  border-left: 1px solid #000000;
+  padding-left: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  main.main .timezone-details .right {
+    border-color: transparent !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main.main .timezone-details .right {
+    padding-left: 0;
+  }
+}
+
+main.main .timezone-details .block {
+  margin: 1rem 0;
+}
+
+@media screen and (max-width: 600px) {
+  main.main .timezone-details .block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  main.main .timezone-details .block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+main.main .timezone-details .block .timezone {
+  text-overflow: ellipsis;
+}
+
+main.main .timezone-details .block .title {
+  font-size: 1.1rem;
+}
+
+main.main .timezone-details .block .detail {
+  font-size: 3.5rem;
+  font-family: 'Heebo', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  main.main .timezone-details .block .detail {
+    font-size: 1.7rem;
+  }
+}
