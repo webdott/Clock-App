@@ -16,7 +16,7 @@ let timeStandard;
 // Get location Time Data
 const getCurrentLocation = async() => {
     try {
-        const API_URL = `https://app.cors.bridged.cc/?method=GET&url=https://ipapi.co&path=/json`;
+        const API_URL = `http://api.ipapi.com/check?access_key=193e8f6975ef8a475e1bc597986c86fc`;
     
         const response = await fetch(API_URL);
         const currentLocation = await response.json();
