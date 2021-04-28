@@ -183,8 +183,6 @@ expandDetails.addEventListener('click', () => {
     arrowDown.classList.toggle('none');
 
     showStatus.innerHTML = showStatus.innerHTML === `MORE` ? 'LESS' : 'MORE'; 
-
-    console.log(timezoneDetails.style.maxHeight);
 });
 
 window.addEventListener('load', getCurrentLocation);
